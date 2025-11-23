@@ -4,24 +4,24 @@
 A clean, production-ready backend foundation built with Django, Django REST Framework, SimpleJWT, and GitHub Actions CI.  
 Includes a custom user model, role-based access control, reusable CRUD patterns, OpenAPI documentation, and a full test suite.
 
-This project serves as the backend core for all EverCurrent applications — including sync licensing tools, product drop systems, analytics dashboards, and future SaaS services.
+This project potentially serves as the backend core for all EverCurrent applications — open to updates and evolving versions for all potential products developped
 
 ---
 
 ##  Features
 
-### ** Authentication**
+###  Authentication
 - Full JWT auth using `rest_framework_simplejwt`
 - Access + refresh tokens
 - Secure logout with token blacklisting
 - Stateless, scalable, API-friendly
 
-### ** Custom User Model**
+###  Custom User Model
 - Fully extendable `User` model
 - Role system (`Role` model + M2M relationship)
 - Supports Admin, Creator, Client, and any future roles
 
-### ** Role-Based Access Control (RBAC)**
+###  Role-Based Access Control (RBAC)
 - Custom permission classes:
   - `HasRole` → protects creation/list endpoints  
   - `IsOwnerOrAdmin` → protects updates/deletes  
@@ -29,13 +29,13 @@ This project serves as the backend core for all EverCurrent applications — inc
 - Creators see only their own objects  
 - Non-role users are strictly restricted
 
-### ** Reusable CRUD API (Resource API)**
+### Reusable CRUD API (Resource API)
 - Built using DRF `ModelViewSet`
 - Pagination, ordering, filtering, searching
 - Owner-bound records with automatic assignment
 - Secure by default
 
-### ** Auto-Generated API Docs**
+###  Auto-Generated API Docs
 - Powered by drf-spectacular  
 - Swagger UI at:  
   ```
@@ -46,12 +46,12 @@ This project serves as the backend core for all EverCurrent applications — inc
   /schema/
   ```
 
-### ** CI/CD (GitHub Actions)**
+###  CI/CD (GitHub Actions)
 - Automated test runner on every `push` and `pull_request`
 - Python + pytest integration
 - Green builds = confidence + professional workflow
 
-### ** Comprehensive Test Suite**
+### Comprehensive Test Suite
 Covers:
 - Health check endpoint  
 - Creator CRUD flow  
@@ -63,7 +63,7 @@ Covers:
 
 ##  Why I Built This
 
-I built this backend core because I needed a **professional, expandable, and secure foundation** for all the systems I'm creating — from music licensing tools to clothing drop systems, analytics engines, and martial arts applications.
+I built this backend core because I needed a **professional, expandable, and secure foundation** for all the systems I'm creating — from music licensing tools to clothing drop systems, analytics engines, and martial arts applications, and beyond!
 
 I wanted a project that proves:
 - I understand real backend engineering  
@@ -211,5 +211,5 @@ View runs under the **Actions** tab in GitHub.
 ##  Author
 
 **Justin Ternois**  
-Entrepreneur • Backend Dev • Music Producer • MMA Athlete  
+* Entrepreneur * Data Engineer/Analyst * Backend Dev  * Music Producer * MMA Athlete * 
 Building tools that empower creators, brands, and everyday people.  
